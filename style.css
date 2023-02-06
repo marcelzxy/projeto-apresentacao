@@ -1,0 +1,55 @@
+body {
+    height: 100%;
+    background-color: #FAB229;
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    background-color: #FAB229;
+
+}
+
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.menu_item {
+    padding: 10px 70px;
+    color: black;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.menu_imagem {
+    height: 40px;
+}
+
+.social {
+    width: 40px;
+    margin: 0px 20px;
+}
+
+main {
+    display: flex;
+    background-color: #FAB229;
+}
+
+.texto_principal {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding: 100px;
+}
+
+.imagem_principal {
+    height: 800px;
+}
+
+footer {
+    background-image: url(imgs/textura.jpg);
+    height: 40px;
+    width: 100%;
+}
