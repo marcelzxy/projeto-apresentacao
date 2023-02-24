@@ -7,82 +7,97 @@ body {
     margin: 0px;
 }
 
-header {
-    display: flex;
 
-    justify-content: space-evenly;
-    padding: 15px;
-    background-color: gray;
+/*Àrea de edição do "Cabeçalho"*/
+header {
+    width: 100%;
+    display: flex;
+    box-shadow: 0px 5px 20px #000;
+    justify-content: space-around;
+    padding: 15px 0px;
+    background-color: #101010;
     align-items: center;
     border-bottom: aliceblue solid 0.6px;
-
+    margin-bottom: 20px;
 }
-
-
-
 
 .menu {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
-
+    width: 50%;
 }
 
 .menu a:hover {
-    color: black;
+    color: white;
+    background-color: #333;
+    border-radius: 10px;
 }
 
 .menu_item {
-    padding: 10px 40px;
+
+    margin: 1% 1%;
+    padding: 3px;
     color: black;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 18px;
     color: aliceblue;
 }
 
 .menu_imagem {
-    height: 60px;
+    height: 40px;
+    padding-left: 10px;
 }
 
 
 .redes_sociais {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .social {
-    height: 45px;
-    margin: 0px 12px;
+    height: 30px;
+    margin-right: 10px;
 }
 
-
+/*Àrea de edição do compo "Principal"*/
 main {
     display: flex;
     flex-direction: row;
-    height: 100%;
-    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-height: 1200px;
     background-color: gray;
-    margin: 20px 60px 100px 60px;
+    margin: 45px 0px;
+
 }
 
 .texto_principal {
     display: flex;
+    flex: 1 1 300px;
     flex-direction: column;
-    width: 30%;
-    padding: 100px;
+    width: 25%;
+    margin: 5%;
+
 }
 
 .imagem_principal {
-    height: 500px;
+    height: 50%;
+    width: 65%;
+    display: flex;
+    flex: 1 1 300px;
+    justify-content: space-around;
 }
 
-footer {
-    background-image: url(imgs/textura.jpg);
-    height: 40px;
-    width: 100%;
+.imagem_principal_img {
+    width: 70%
 }
 
 
 
+
+/*Àrea de edição do compo de "Expêriencias"*/
 .experiencias {
     display: flex;
     flex-direction: column;
@@ -111,7 +126,7 @@ footer {
 
 
 
-
+/*Àrea de edição do compo "História"*/
 .historia {
     margin: 45px;
     display: flex;
@@ -127,29 +142,60 @@ footer {
 .historia_texto {
     font-size: 16px;
     text-align: center;
-    margin: 45px;
+    margin: 1%;
 }
 
 .historia_imgs {
-    align-items: center;
+    align-items: baseline;
     display: flex;
-    margin: 0px 80px;
+    margin: 0 auto;
+    flex-wrap: wrap;
     flex-direction: row;
+    justify-content: space-around;
 }
 
 .historia_img {
-    width: 200px;
-    margin: 45px;
+    width: 10%;
+    padding: 20px;
+    max-width: 150px;
+    flex: 1 1 100;
 }
 
 
-
+/*Àrea de edição do compo "Projetos"*/
 .projetos {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 45px 100px;
+    justify-content: space-evenly;
+    flex: 1 1 300px;
+    margin: 0 auto;
+}
+
+.projeto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    height: 25%;
+    margin: 2%;
+}
+
+
+.projetos_arquivo {
+    width: 35%;
+
+}
+
+.projeto_link {
+    width: 1%;
+}
+
+.projetos_descricao {
+    font-size: 10px;
+    color: aliceblue;
+    text-decoration: underline;
+    padding: 5%;
 }
 
 
@@ -160,27 +206,9 @@ footer {
     text-align: center;
 }
 
-.projetos_arquivo {
-    width: 120px;
-    margin: 60px;
-}
-
-.projeto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px;
-}
-
-.projetos_descricao {
-    font-size: 18px;
-    color: aliceblue;
-    text-decoration: underline;
-    padding: 22px;
-}
 
 
-
+/*Àrea de edição do compo "Contato"*/
 .contato {
     display: flex;
     align-items: center;
@@ -190,7 +218,7 @@ footer {
 }
 
 .contato_email {
-    margin-top: 45px;
+    margin: 45px;
 }
 
 .contato_link {
@@ -206,4 +234,14 @@ footer {
 
 .contato_qrcode {
     margin-bottom: 45px;
+    border-radius: 10px;
+}
+
+
+/*Àrea de edição do compo Footer*/
+footer {
+    background-color: #101010;
+    box-shadow: 5px 5px 20px 10px #000;
+    height: 40px;
+    width: 100%;
 }
